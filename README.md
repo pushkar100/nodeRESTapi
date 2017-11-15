@@ -2,13 +2,12 @@
 
 A simple REST API server created using NodeJS and Mongoose (Express framework and uses JSON Web Tokens for authentication)
 
-Demo Link: [https://fierce-woodland-44908.herokuapp.com/](https://fierce-woodland-44908.herokuapp.com/)
-
-1. POST `/auth/signin`: 
-    1. Params: `email` and `password`
-    2. Returns (if successful) an object containing a token with a subsequent authorized requests containing token as a param. This token must be passed as a parameter (key: 'token') in the body of all requests that require authorization.
-2. POST `/users`: Creates a user
+**Routes**:
+1. POST `/users`: Creates a user
 	1. Params: `username`, `email`, `password`, `gender`, `age` (optional), `country` (optional)
+2. POST `/auth/signin`: 
+    1. Params: `email` and `password`
+    2. Returns (if successful) an object containing a token with a subsequent authorized requests containing token as a param. This token must be passed as a parameter (key: `token`) in the body of all requests that require authorization.
 3. `/users/:userid`
     1. GET: get basic details of any user account
     2. PUT: update your user details
@@ -24,3 +23,28 @@ Demo Link: [https://fierce-woodland-44908.herokuapp.com/](https://fierce-woodlan
     1. GET: Get your todo item
     2. PUT: Update your todo item
     3. DELETE: Delete your todo item
+
+**Demo Link**: 
+
+[https://fierce-woodland-44908.herokuapp.com/](https://fierce-woodland-44908.herokuapp.com/)
+
+Sample usage for a demo `sample` user: 
+```
+Method: POST 
+URL: https://fierce-woodland-44908.herokuapp.com/auth/signin/ 
+Request Body: email=sample%40sample.com&password=sample
+
+Will receive a userid and a token which needs to be passed in subsequent requests (Requiring authorization).
+```
+
+```
+Method: POST 
+URL: https://fierce-woodland-44908.herokuapp.com/users/5a0ca3cae3491000148153cc 
+Request Body: token={YOUR_JWT_TOKEN}
+```
+
+
+
+
+
+
