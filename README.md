@@ -6,7 +6,7 @@ Demo Link: [https://fierce-woodland-44908.herokuapp.com/](https://fierce-woodlan
 
 1. POST `/auth/signin`: 
     1. Params: `email` and `password`
-    2. Returns (if successful) an object containing a token with a subsequent authorized requests containing token as a param.
+    2. Returns (if successful) an object containing a token with a subsequent authorized requests containing token as a param. This token must be passed as a parameter (key: 'token') in the body of all requests that require authorization.
 2. POST `/users`: Creates a user
 	1. Params: `username`, `email`, `password`, `gender`, `age` (optional), `country` (optional)
 3. `/users/:userid`
