@@ -1,6 +1,6 @@
-# nodeRESTapi
+# NODE REST API FOR A SIMPLE TODO APP
 
-A simple REST API server created using NodeJS and Mongoose (Express framework and uses JSON Web Tokens for authentication)
+A simple REST API server that helps maintain users and their todos. Created using NodeJS and Mongoose (Express framework and uses JSON Web Tokens for authentication)
 
 **Routes**:
 1. POST `/users`: Creates a user
