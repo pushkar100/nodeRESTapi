@@ -38,7 +38,7 @@ Will receive a userid and a token which needs to be passed in subsequent request
 ```
 
 ```
-Method: POST 
+Method: GET 
 URL: https://fierce-woodland-44908.herokuapp.com/users/5a0ca3cae3491000148153cc 
 Request Body: token={YOUR_JWT_TOKEN}
 ```
