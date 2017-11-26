@@ -1,6 +1,6 @@
-# NODE REST API FOR A SIMPLE TODO APP
+# Node REST API
 
-A simple REST API server that helps maintain users and their todos. Created using NodeJS and Mongoose (Express framework and uses JSON Web Tokens for authentication)
+A simple REST API server built using NodeJS that helps maintain users and their todos. Created using NodeJS and Mongoose (Express framework and uses JSON Web Tokens for authentication)
 
 **Routes**:
 1. POST `/users`: Creates a user
@@ -24,22 +24,24 @@ A simple REST API server that helps maintain users and their todos. Created usin
     2. PUT: Update your todo item
     3. DELETE: Delete your todo item
 
-**Demo Link**: 
+## URL
 
-[https://fierce-woodland-44908.herokuapp.com/](https://fierce-woodland-44908.herokuapp.com/)
+[Demo URL](https://restful-api-todo-app.herokuapp.com/)
+
+## Usage 
 
 Sample usage for a demo `sample` user: 
 ```
 Method: POST 
-URL: https://fierce-woodland-44908.herokuapp.com/auth/signin/ 
+URL: https://restful-api-todo-app.herokuapp.com/ 
 Request Body: email=sample%40sample.com&password=sample
 
-Will receive a userid and a token which needs to be passed in subsequent requests (Requiring authorization).
+/* Will receive a User ID and a Token which needs to be passed in subsequent requests (Requiring authorization). */
 ```
 
 ```
 Method: GET 
-URL: https://fierce-woodland-44908.herokuapp.com/users/5a0ca3cae3491000148153cc 
+URL: https://restful-api-todo-app.herokuapp.com/users/5a0ca3cae3491000148153cc 
 Request Body: token={YOUR_JWT_TOKEN}
 ```
 
