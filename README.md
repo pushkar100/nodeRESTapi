@@ -33,7 +33,7 @@ A simple REST API server built using NodeJS that helps maintain users and their 
 Sample usage for a demo `sample` user: 
 ```
 Method: POST 
-URL: https://restful-api-todo-app.herokuapp.com/ 
+URL: https://restful-api-todo-app.herokuapp.com/auth/signin/
 Request Body: email=sample%40sample.com&password=sample
 
 /* Will receive a User ID and a Token which needs to be passed in subsequent requests (Requiring authorization). */
