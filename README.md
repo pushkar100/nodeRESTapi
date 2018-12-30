@@ -2,6 +2,8 @@
 
 A simple REST API server built using NodeJS that helps maintain users and their todos. Created using NodeJS and Mongoose (Express framework and uses JSON Web Tokens for authentication)
 
+**Base URL of API: `https://restful-api-todo-app.herokuapp.com`**
+
 **Routes**:
 1. POST `/users`: Creates a user
 	1. Params: `username`, `email`, `password`, `gender`, `age` (optional), `country` (optional)
